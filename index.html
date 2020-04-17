@@ -8,18 +8,22 @@
   <script>
     // Your JavaScript goes here!
     function add7(number) {
-      console.log(number + 7);
+    	return number + 7;
     }
     function multiply(number1, number2) {
-      console.log(number1 * number2);
+      return (number1 * number2);
     }
-    function capitalize(str) {
-      var FirstLetter = str.substr(0,1);
-      console.log(FirstLetter.toUpperCase);
+    function capitalize(string) {
+      var length = string.length;
+      var str = string.toLowerCase();
+      var FirstLetter = str.slice(0, 1);
+      var FirstLetterUp = FirstLetter.toUpperCase();
+      var combined = FirstLetterUp + str.slice(1, length);
+      return(combined);
     }
     function lastLetter(str1) {
       var numberOfLetters = str1.length;
-      console.log(charAt(numberOfLetters));
+      return(str1.charAt(numberOfLetters - 1));
     }
   </script>
 </body>
